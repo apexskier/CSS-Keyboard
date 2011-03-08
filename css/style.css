@@ -451,6 +451,19 @@ ul ol {
 	outline: none;
 }
 
+footer {
+	width: 700px;
+	margin: 75px auto 0;
+	text-align: center;
+	color: #aaa;
+}
+footer a {
+	color: #888;
+}
+footer a:hover, footer a:focus, footer a:active {
+	color: #979797;
+	text-decoration: none;
+}
 
 
 

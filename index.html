@@ -66,7 +66,7 @@
 				<li><a href="#" class="key c48"><b>)</b><span>0</span></a></li>
 				<li><a href="#" class="key c189 alt"><b>_</b><span>-</span></a></li>
 				<li><a href="#" class="key c187"><b>+</b><span>=</span></a></li>
-				<li><a href="#" class="key c46" id="delete"><span>Delete</span></a></li>
+				<li><a href="#" class="key c46 c8" id="delete"><span>Delete</span></a></li>
 			</ul>
 			<ul id="qwerty">
 				<li><a href="#" class="key c9" id="tab"><span>tab</span></a></li>
@@ -116,11 +116,11 @@
 			<ul id="bottomrow">
 				<li><a href="#" class="key" id="fn"><span>fn</span></a></li>
 				<li><a href="#" class="key c17" id="control"><span>control</span></a></li>
-				<li><a href="#" class="key option" id="optionleft"><span>option</span></a></li>
-				<li><a href="#" class="key command" id="commandleft"><span>command</span></a></li>
+				<li><a href="#" class="key option c18" id="optionleft"><span>option</span></a></li>
+				<li><a href="#" class="key command c91" id="commandleft"><span>command</span></a></li>
 				<li><a href="#" class="key c32" id="spacebar"><span> </span></a></li>
-				<li><a href="#" class="key command" id="commandright"><span>command</span></a></li>
-				<li><a href="#" class="key option" id="optionright"><span>option</span></a></li>
+				<li><a href="#" class="key command c93" id="commandright"><span>command</span></a></li>
+				<li><a href="#" class="key option c18" id="optionright"><span>option</span></a></li>
 				<ol>
 					<li><a href="#" class="key c37 vt-p" id="left"><span><img src="img/left.png"></span></a></li>
 					<li>
@@ -133,7 +133,7 @@
 	</div>
 	
 	<footer>
-	
+		<p>Created by <a href="http://twitter.com/noxxten">Dustin Cartwright</a>, with functionality from <a href="http://twitter.com/apexskier">Cameron Little</a>. See the project on <a href="https://github.com/apexskier/CSS-Keyboard">GitHub</a>.</p>
 	</footer>
 </div> <!-- end of #container -->
 
@@ -144,6 +144,7 @@
 <script>
 /* This script by Dustin Hoffman. Caps var changer added by Cameron Little.
 */
+var caps = false;
 
 $(window).keydown(function(e) {
 	key = (e.keyCode) ? e.keyCode : e.which;

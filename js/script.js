@@ -2,8 +2,6 @@
 
 */
 
-var caps = false;
-
 $(document).ready(function() {
 	$('.key').click(function() {
 		var value = $(this).find('span').html();
