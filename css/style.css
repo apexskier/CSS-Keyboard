@@ -1,0 +1,490 @@
+/*  HTML5 ✰ Boilerplate  */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, 
+menu, nav, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display:block;
+}
+nav ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+
+
+body { font:13px/1.231 sans-serif; *font-size:small; } 
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+body, select, input, textarea {   color: #444; }
+h1,h2,h3,h4,h5,h6 { font-weight: bold; }
+html { overflow-y: scroll; }
+
+a:hover, a:active { outline: none; }
+
+ul, ol { margin-left: 1.8em; }
+ol { list-style-type: decimal; }
+
+nav ul, nav li { margin: 0; } 
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td, td img { vertical-align: top; } 
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+pre {  padding: 15px;  white-space: pre;  white-space: pre-wrap;  white-space: pre-line;  word-wrap: break-word; }
+textarea { overflow: auto; } 
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px;  -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red;  box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, 
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+a:link { -webkit-tap-highlight-color: #FF5E99; } 
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; } 
+.visuallyhidden { position: absolute !important; clip: rect(1px 1px 1px 1px);  clip: rect(1px, 1px, 1px, 1px); }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after {  content: "\0020"; display: block; height: 0; visibility: hidden;	 } 
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+ /* Primary Styles
+    Author: Dustin Cartwright, Cameron Little
+    Primary Author: Dustin Cartwright
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f8f8f8;
+}
+
+#keyboard {
+	z-index: 20;
+	margin: 0 auto 20px;
+	width: 800px;
+	height: 315px;
+	background: #bbb;
+	background: -moz-linear-gradient(top, #A8A8A8 0%, #E0E0E0 5%, #EFEFEF 7%, #D8D8D8 15%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A8A8A8), color-stop(5%,#E0E0E0), color-stop(7%,#EFEFEF), color-stop(15%,#D8D8D8));	
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A8A8A8', endColorstr='#D8D8D8',GradientType=0 ); /* ie */
+	    -moz-border-radius-topleft: 7px 21px;
+	   -moz-border-radius-topright: 7px 21px;
+	-moz-border-radius-bottomright: 10px;
+	 -moz-border-radius-bottomleft: 10px;
+	        border-top-left-radius: 7px 21px;
+	       border-top-right-radius: 7px 21px;
+	    border-bottom-right-radius: 10px;
+	     border-bottom-left-radius: 10px;
+	padding: 50px 0 0;
+	-webkit-box-shadow: inset 0 0 8px #bbb, 0 1px 0 #aaa, 0 4px 0 #bbb, 0 10px 30px #ddd;
+	   -moz-box-shadow: inset 0 0 8px #bbb, 0 1px 0 #aaa, 0 4px 0 #bbb, 0 10px 30px #ddd;
+	        box-shadow: inset 0 0 8px #bbb, 0 1px 0 #aaa, 0 4px 0 #bbb, 0 10px 30px #ddd;
+}
+
+ul {
+	list-style-type: none;
+	width: 784px;
+	margin: 0 auto;
+}
+
+li {
+	float: left;
+}
+
+.key {
+	display: block;
+	color: #aaa;
+	font: bold 9pt arial;
+	text-decoration: none;
+	text-align: center;
+	width: 44px;
+	height: 41px;
+	margin: 5px;
+	background: #eff0f2;
+	-moz-border-radius: 4px;
+	     border-radius: 4px;
+	border-top: 1px solid #f5f5f5;
+	-webkit-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333;
+	   -moz-box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333;
+	        box-shadow: inset 0 0 25px #e8e8e8, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 2px 3px #333;
+	text-shadow: 0 1px 0 #f5f5f5;
+	filter: dropshadow(color = #f5f5f5, offx = 0, offy = 1);
+}
+
+.key:active, .keydown {
+	color: #888;
+	background: #ebeced;
+	margin: 7px 5px 3px;
+	-webkit-box-shadow: inset 0 0 25px #ddd, 0 0 3px #333;
+	   -moz-box-shadow: inset 0 0 25px #ddd, 0 0 3px #333;
+	        box-shadow: inset 0 0 25px #ddd, 0 0 3px #333;
+	border-top: 1px solid #eee;
+}
+
+.fn span {
+	display: block;
+	margin: 14px 5px 0 0;
+	text-align: right;
+	font: bold 6pt arial;
+	text-transform: uppercase;
+}
+
+#esc {
+	margin: 6px 15px 0 0;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+#numbers li a span {
+	display: block;
+}
+
+#numbers li a b {
+	margin: 3px 0;
+	display: block;
+}
+
+#numbers li .alt b {
+	display: block;
+	margin: 0 0 3px;
+}
+
+#numbers li #delete span {
+	text-align: right;
+	margin: 23px 10px 0 0;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+#qwerty li a span {
+	display: block;
+	margin: 13px 0 0;
+	text-transform: uppercase;
+}
+
+#qwerty li #tab span {
+	text-align: left;
+	margin: 23px 0 0 10px;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+#qwerty li .alt b {
+	display: block;
+	margin: 3px 0 0;
+}
+
+#qwerty li .alt span {
+	margin: 2px 0 0;
+}
+
+#asdfg li a span {
+	display: block;
+	margin: 13px 0 0;
+	text-transform: uppercase;
+}
+
+#asdfg li .alt span {
+	margin: 0;
+	text-transform: lowercase;
+}
+
+#asdfg li .alt b {
+	display: block;
+	margin: 3px 0 0;
+}
+
+#asdfg li #caps b {
+	display: block;
+	background: #999;
+	width: 4px;
+	height: 4px;
+	border-radius: 10px;
+	margin: 9px 0 0 10px;
+	-webkit-box-shadow: inset 0 1px 0 #666;
+	-moz-box-shadow: inset 0 1px 0 #666;
+	box-shadow: inset 0 1px 0 #666;
+}
+
+#asdfg li #caps.keydown b {
+	background: #c1ff00;
+	width: 4px;
+	height: 4px;
+	border-radius: 10px;
+	/* Green Light added by Cameron Little */
+	-webkit-box-shadow: 0 0 3px 1px rgba(205, 255, 26, 0.5), inset 0 1px 0 #749C00;
+	   -moz-box-shadow: 0 0 3px 1px rgba(205, 255, 26, 0.5), inset 0 1px 0 #749C00;
+	        box-shadow: 0 0 3px 1px rgba(205, 255, 26, 0.5), inset 0 1px 0 #749C00;
+}
+
+#asdfg li #caps span {
+	text-align: left;
+	margin: 10px 0 0 10px;
+	font-size: 7.5pt;
+}
+
+#asdfg li #enter span {
+	text-align: right;
+	margin: 23px 10px 0 0;
+	font-size: 7.5pt;
+}
+
+#zxcvb li a span {
+	display: block;
+	margin: 13px 0 0;
+	text-transform: uppercase;
+}
+
+#zxcvb li .shiftleft span {
+	text-align: left;
+	margin: 23px 0 0 10px;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+#zxcvb li .shiftright span {
+	text-align: right;
+	margin: 23px 10px 0 0;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+#zxcvb li .alt b {
+	display: block;
+	margin: 4px 0 0;
+}
+
+#zxcvb li .alt span {
+	margin: 0;
+}
+
+#bottomrow li #fn span, #bottomrow li #control span, #bottomrow li #optionleft span, #bottomrow li #commandleft span {
+	display: block;
+	text-align: left;
+	margin: 31px 0 0 8px;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+#bottomrow li #optionright span, #bottomrow li #commandright span {
+	display: block;
+	text-align: right;
+	margin: 31px 8px 0 0;
+	font-size: 7.5pt;
+	text-transform: lowercase;
+}
+
+#bottomrow ol li #left span, #bottomrow ol li #right span, #bottomrow ol li #up span, #bottomrow ol li #down span {
+	display: block;
+	margin: 4px 0 0;
+}
+
+.fn {
+	height: 26px;
+	width: 46px;
+}
+
+#delete {
+	width: 72px;
+}
+
+#tab {
+	width: 72px;
+}
+
+#caps {
+	width: 85px;
+}
+
+#enter {
+	width: 85px;
+}
+
+.shiftleft, .shiftright {
+	width: 112px;
+}
+
+#fn, #control, .option, .command, #spacebar {
+	height: 49px;
+}
+
+#control {
+	width: 56px;
+}
+
+.option {
+	width: 46px;
+}
+
+.command {
+	width: 67px;
+}
+
+#spacebar {
+	width: 226px;
+}
+
+#left img, #up img, #down img, #right img {
+	border: none;
+}
+
+ul ol {
+	list-style-type: none;
+}
+
+#down {
+	height: 23px;
+}
+
+#up, #left, #right {
+	height: 24px;
+}
+
+#left, #right {
+	margin: 30px 5px 5px;
+}
+
+#left:active, #right:active {
+	margin: 32px 5px 3px;
+}
+
+#up {
+	margin: 5px 5px 1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+#up:active {
+	margin: 8px 5px -2px;
+}
+
+#down {
+	margin: 0 5px 5px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+#down:active {
+	margin: 3px 5px 4px;
+}
+
+#paper1, #paper2, #paper3 {
+	display: block;
+	width: 500px;
+	height: 200px;
+	background: #fff;
+	margin: 50px auto 20px;
+	border: 1px solid #fff;
+	padding: 20px;
+	-webkit-box-shadow: inset 0 0 15px #f9f9f9, 0 0 5px #e5e5e5;
+	   -moz-box-shadow: inset 0 0 15px #f9f9f9, 0 0 5px #e5e5e5;
+	        box-shadow: inset 0 0 15px #f9f9f9, 0 0 5px #e5e5e5;
+}
+
+#paper1 {
+	margin: 50px auto 20px;
+	   -moz-transform: rotate(-3deg);
+	-webkit-transform: rotate(-3deg);
+	     -o-transform: rotate(-3deg);
+	    -ms-transform: rotate(-3deg);
+	        transform: rotate(-3deg);
+	zoom: 1;
+}
+
+#paper2 {
+	margin: -265px auto 0;
+	   -moz-transform: rotate(0.5deg);
+	-webkit-transform: rotate(0.5deg);
+	     -o-transform: rotate(0.5deg);
+	    -ms-transform: rotate(0.5deg);
+	        transform: rotate(0.5deg);
+	zoom: 1;
+}
+
+#paper3 {
+	margin: -240px auto 100px;
+	   -moz-transform: rotate(-1.5deg);
+	-webkit-transform: rotate(-1.5deg);
+	     -o-transform: rotate(-1.5deg);
+	    -me-transform: rotate(-1.5deg);
+	        transform: rotate(-1.5deg);
+	zoom: 1;
+}
+
+#paper3:focus {
+	outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media all and (orientation:portrait) { 
+  
+}
+
+@media all and (orientation:landscape) { 
+  
+}
+
+@media screen and (max-device-width: 480px) {
+  
+  
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; } 
+  abbr:after { content: " (" attr(title) ")"; }
+  .ir a:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }  
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+

@@ -1,0 +1,197 @@
+<!doctype html>  
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title></title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	
+	<link rel="stylesheet" href="css/style.css?v=2">
+	<script src="js/libs/modernizr-1.6.min.js"></script>
+	
+</head>
+
+<body>
+<div id="container">
+	<header>
+	
+	</header>
+	
+	<div id="main">
+		<!-- Created by Dustin Cartwright. Very very lightly modified by Cameron Little -->
+		<div id="papers">
+			<span id="paper1"></span>
+			<span id="paper2"></span>
+			<span contenteditable id="paper3"></span>
+		</div>
+		<div id="keyboard">
+			<ul>
+				<li><a href="#" class="key c27 fn"><span id="esc">esc</span></a></li>
+				<li><a href="#" class="key c112 fn"><span>F1</span></a></li>
+				<li><a href="#" class="key c113 fn"><span>F2</span></a></li>
+				<li><a href="#" class="key c114 fn"><span>F3</span></a></li>
+				<li><a href="#" class="key c115 fn"><span>F4</span></a></li>
+				<li><a href="#" class="key c116 fn"><span>F5</span></a></li>
+				<li><a href="#" class="key c117 fn"><span>F6</span></a></li>
+				<li><a href="#" class="key c118 fn"><span>F7</span></a></li>
+				<li><a href="#" class="key c119 fn"><span>F8</span></a></li>
+				<li><a href="#" class="key c120 fn"><span>F9</span></a></li>
+				<li><a href="#" class="key c121 fn"><span>F10</span></a></li>
+				<li><a href="#" class="key c122 fn"><span>F11</span></a></li>
+				<li><a href="#" class="key c123 fn"><span>F12</span></a></li>
+				<li><a href="#" class="key fn"><span>Eject</span></a></li>
+			</ul>
+			<ul id="numbers">
+				<li><a href="#" class="key c192"><b>~</b><span>`</span></a></li>
+				<li><a href="#" class="key c49"><b>!</b><span>1</span></a></li>
+				<li><a href="#" class="key c50"><b>@</b><span>2</span></a></li>
+				<li><a href="#" class="key c51"><b>#</b><span>3</span></a></li>
+				<li><a href="#" class="key c52"><b>$</b><span>4</span></a></li>
+				<li><a href="#" class="key c53"><b>%</b><span>5</span></a></li>
+				<li><a href="#" class="key c54"><b>^</b><span>6</span></a></li>
+				<li><a href="#" class="key c55"><b>&amp;</b><span>7</span></a></li>
+				<li><a href="#" class="key c56"><b>*</b><span>8</span></a></li>
+				<li><a href="#" class="key c57"><b>(</b><span>9</span></a></li>
+				<li><a href="#" class="key c48"><b>)</b><span>0</span></a></li>
+				<li><a href="#" class="key c189 alt"><b>_</b><span>-</span></a></li>
+				<li><a href="#" class="key c187"><b>+</b><span>=</span></a></li>
+				<li><a href="#" class="key c46" id="delete"><span>Delete</span></a></li>
+			</ul>
+			<ul id="qwerty">
+				<li><a href="#" class="key c9" id="tab"><span>tab</span></a></li>
+				<li><a href="#" class="key c81"><span>q</span></a></li>
+				<li><a href="#" class="key c87"><span>w</span></a></li>
+				<li><a href="#" class="key c69"><span>e</span></a></li>
+				<li><a href="#" class="key c82"><span>r</span></a></li>
+				<li><a href="#" class="key c84"><span>t</span></a></li>
+				<li><a href="#" class="key c89"><span>y</span></a></li>
+				<li><a href="#" class="key c85"><span>u</span></a></li>
+				<li><a href="#" class="key c73"><span>i</span></a></li>
+				<li><a href="#" class="key c79"><span>o</span></a></li>
+				<li><a href="#" class="key c80"><span>p</span></a></li>
+				<li><a href="#" class="key c219 alt"><b>{</b><span>[</span></a></li>
+				<li><a href="#" class="key c221 alt"><b>}</b><span>]</span></a></li>
+				<li><a href="#" class="key c220 alt"><b>|</b><span>\</span></a></li>
+			</ul>
+			<ul id="asdfg">
+				<li><a href="#" class="key c20 alt" id="caps"><b></b><span>caps lock</span></a></li>
+				<li><a href="#" class="key c65"><span>a</span></a></li>
+				<li><a href="#" class="key c83"><span>s</span></a></li>
+				<li><a href="#" class="key c68"><span>d</span></a></li>
+				<li><a href="#" class="key c70"><span>f</span></a></li>
+				<li><a href="#" class="key c71"><span>g</span></a></li>
+				<li><a href="#" class="key c72"><span>h</span></a></li>
+				<li><a href="#" class="key c74"><span>j</span></a></li>
+				<li><a href="#" class="key c75"><span>k</span></a></li>
+				<li><a href="#" class="key c76"><span>l</span></a></li>
+				<li><a href="#" class="key c186 alt"><b>:</b><span>;</span></a></li>
+				<li><a href="#" class="key c222 alt"><b>"</b><span>'</span></a></li>
+				<li><a href="#" class="key c13 alt" id="enter"><span>return</span></a></li>
+			</ul>
+			<ul id="zxcvb">
+				<li><a href="#" class="key c16 shiftleft shift"><span>Shift</span></a></li>
+				<li><a href="#" class="key c90"><span>z</span></a></li>
+				<li><a href="#" class="key c88"><span>x</span></a></li>
+				<li><a href="#" class="key c67"><span>c</span></a></li>
+				<li><a href="#" class="key c86"><span>v</span></a></li>
+				<li><a href="#" class="key c66"><span>b</span></a></li>
+				<li><a href="#" class="key c78"><span>n</span></a></li>
+				<li><a href="#" class="key c77"><span>m</span></a></li>
+				<li><a href="#" class="key c188 alt"><b>&lt;</b><span>,</span></a></li>
+				<li><a href="#" class="key c190 alt"><b>&gt;</b><span>.</span></a></li>
+				<li><a href="#" class="key c191 alt"><b>?</b><span>/</span></a></li>
+				<li><a href="#" class="key c16 shiftright shift"><span>Shift</span></a></li>
+			</ul>
+			<ul id="bottomrow">
+				<li><a href="#" class="key" id="fn"><span>fn</span></a></li>
+				<li><a href="#" class="key c17" id="control"><span>control</span></a></li>
+				<li><a href="#" class="key option" id="optionleft"><span>option</span></a></li>
+				<li><a href="#" class="key command" id="commandleft"><span>command</span></a></li>
+				<li><a href="#" class="key c32" id="spacebar"><span> </span></a></li>
+				<li><a href="#" class="key command" id="commandright"><span>command</span></a></li>
+				<li><a href="#" class="key option" id="optionright"><span>option</span></a></li>
+				<ol>
+					<li><a href="#" class="key c37 vt-p" id="left"><span><img src="img/left.png"></span></a></li>
+					<li>
+						<a href="#" class="key c38 vt-p" id="up"><span><img src="img/up.png"></span></a>
+						<a href="#" class="key c40 vt-p" id="down"><span><img src="img/down.png"></span></a>
+					</li>
+					<li><a href="#" class="key c39 vt-p" id="right"><span><img src="img/right.png"></span></a></li>			</ol>
+			</ul>
+		</div>
+	</div>
+	
+	<footer>
+	
+	</footer>
+</div> <!-- end of #container -->
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+
+<script>
+/* This script by Dustin Hoffman. Caps var changer added by Cameron Little.
+*/
+
+$(window).keydown(function(e) {
+	key = (e.keyCode) ? e.keyCode : e.which;
+	$('.key.c' + key).addClass('keydown');
+	console.log(key);
+	if (key == 20) {
+		caps = (caps) ? false : true;
+	}
+});
+
+$(window).keyup(function(e) {
+	key = (e.keyCode) ? e.keyCode : e.which;
+	$('.key.c' + key).removeClass('keydown');
+	if (key == 20) {
+		caps = (caps) ? false : true;
+	}
+});
+</script>
+
+<!-- scripts concatenated and minified via ant build script-->
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<!-- end concatenated and minified scripts-->
+
+
+<!--[if lt IE 7 ]>
+<script src="js/libs/dd_belatedpng.js"></script>
+<script> DD_belatedPNG.fix('img, .png_bg'); </script>
+<![endif]-->
+
+<!-- yui profiler and profileviewer - remove for production -->
+<script src="js/profiling/yahoo-profiling.min.js"></script>
+<script src="js/profiling/config.js"></script>
+<!-- end profiling code -->
+
+
+
+<!-- change the UA-XXXXX-X to be your site's ID -->
+<script>
+var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+(function(d, t) {
+var g = d.createElement(t),
+s = d.getElementsByTagName(t)[0];
+g.async = true;
+g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g, s);
+})(document, 'script');
+</script>
+
+</body>
+</html>
